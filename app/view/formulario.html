@@ -29,7 +29,24 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
         }
 
-        h1 {
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            /* Separa los elementos a los extremos */
+            align-items: center;
+            /* Centra verticalmente */
+            flex-direction: row-reverse;
+            /* Mueve el primer elemento (logo) a la derecha */
+            text-align: left;
+            /* Asegura que el texto esté alineado a la izquierda */
+        }
+
+        .logo {
+            margin-left: 20px;
+            /* Espacio entre el texto y el logo */
+        }
+
+        ƒ h1 {
             font-size: 32px;
             margin-bottom: 8px;
         }
@@ -129,7 +146,8 @@
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <img src="https://www.centrosur.gob.ec/wp-content/uploads/2021/07/Logo-CENTROSUR.jpg" alt="Logo Empresa" class="logo">
+                <img src="https://www.centrosur.gob.ec/wp-content/uploads/2021/07/Logo-CENTROSUR.jpg" alt="Logo Empresa"
+                    width="150" class="logo">
                 <div>
                     <h1>Sistema de Gestión Documental</h1>
                     <p class="subtitle">
