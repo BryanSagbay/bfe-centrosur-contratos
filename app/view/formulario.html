@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Llenado de Plantillas</title>
+</head>
+<body>
+    <h1>Llenar Plantillas de Excel y Word</h1>
+    <form action="/submit_form" method="post">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        
+        <label for="cedula">Cédula:</label>
+        <input type="text" name="cedula" id="cedula" required><br><br>
+        
+        <label for="template_choice">Seleccionar Plantilla:</label>
+        <select name="template_choice" id="template_choice" required>
+            <option value="">-- Seleccionar --</option>
+            <option value="template1.xlsx">Plantilla Excel 1</option>
+            <option value="template2.xlsx">Plantilla Excel 2</option>
+            <!-- Agregar más plantillas Excel aquí -->
+            <option value="template1.docx">Plantilla Word 1</option>
+            <!-- Agregar más plantillas Word aquí -->
+        </select><br><br>
+        
+        <input type="submit" value="Generar Documento">
+    </form>
+</body>
+</html>
