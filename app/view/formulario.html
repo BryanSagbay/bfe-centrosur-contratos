@@ -154,7 +154,7 @@
 
 
 
-        <form method="post" target="_blank">
+        <form method="post" action="/submit_form" target="_blank">
 
             <!-- DATOS PERSONALES -->
             <div class="section">
@@ -277,13 +277,12 @@
                 <div class="grid">
                     <div>
                         <label>Seleccione el documento *</label>
-                        <select name="documento" required>
+                        <select name="template_choice" required>
                             <option value="">-- Seleccione una opción --</option>
-                            <option value="todos">📁 Generar TODOS los documentos</option>
-                            <option value="contrato">Contrato Laboral</option>
-                            <option value="acta_entrega">Acta de Entrega</option>
-                            <option value="confidencialidad">Acuerdo de Confidencialidad</option>
-                            <option value="responsabilidades">Responsabilidades del Cargo</option>
+                            <option value="contrato.docx">Contrato Laboral</option>
+                            <option value="acta_entrega.docx">Acta de Entrega</option>
+                            <option value="confidencialidad.docx">Acuerdo de Confidencialidad</option>
+                            <option value="responsabilidades.docx">Responsabilidades del Cargo</option>
                         </select>
                     </div>
                 </div>
