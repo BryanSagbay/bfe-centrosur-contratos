@@ -14,35 +14,73 @@ class TemplateLoader:
         full_path = os.path.join(self.template_dir, template_path)
         if template_path.endswith('.xlsx'):
             return load_workbook(full_path)
+        elif template_path.endswith('.xls'):
+            return load_workbook(full_path, engine='xlrd')
         elif template_path.endswith('.docx'):
             return Document(full_path)
         else:
             raise ValueError("Unsupported template format")
 
     def fill_template(self, template, data):
+        # Mapeo de placeholders a claves de data
+        mapping = {
+            'cuidad': 'cuidad_colaborador',
+            'direccion': 'direccion',
+            'fecha': 'fecha_entrega_documentos',  # Campo oculto con fecha formateada
+            'colaborador_apellidos': 'colaborador_apellidos',
+            'colaborador_nombres': 'colaborador_nombres',
+            'cargo': 'cargo',
+            'colaborador': 'colaborador',
+            'responsable_DTH': 'responsable_DTH',
+            'departamento': 'area_departamento',
+            'reemplazo': 'reemplazo',
+            'cedula': 'cedula',
+            'lugar_trabajo': 'lugar_trabajo',
+            'recibido': 'recibido_por',
+            'analisis_talento': 'analista_th',
+            'trabajadora_social': 'trabajadora_social',
+            'asistente_remuneracion': 'remuneraciones',
+            'analista_remuneracion': 'remuneraciones',
+            'jefes_seguros': 'seguros',
+            'supervisor': 'seguridad',
+            'riesgo': 'riesgo',
+            'coordinador': 'coordinador_calidad',
+            'ingeniero_calidad': 'ingeniero_calidad',
+            'medico_ocupacional': 'departamento_medico',
+            'enfermera': 'enfermera',  # Si no existe, será vacío
+            'ingeniero_electrico': 'ingeniero_electrico',
+            'superintendente': 'superintendente',
+            'dia': 'dia',
+            'mes': 'mes',
+            'anio': 'anio'
+        }
+        
         if isinstance(template, load_workbook):
             # Llenar Excel - todas las hojas
             for sheet in template.worksheets:
-                for key, value in data.items():
+                for placeholder, key in mapping.items():
+                    value = data.get(key, '')
                     for row in sheet.iter_rows():
                         for cell in row:
                             if cell.value and isinstance(cell.value, str):
-                                cell.value = cell.value.replace('{{' + key + '}}', str(value))
+                                cell.value = cell.value.replace('{{' + placeholder + '}}', str(value))
             return template
         elif isinstance(template, Document):
             # Llenar Word - párrafos principales
             for paragraph in template.paragraphs:
-                for key, value in data.items():
-                    if '{{' + key + '}}' in paragraph.text:
-                        paragraph.text = paragraph.text.replace('{{' + key + '}}', str(value))
+                for placeholder, key in mapping.items():
+                    value = data.get(key, '')
+                    if '{{' + placeholder + '}}' in paragraph.text:
+                        paragraph.text = paragraph.text.replace('{{' + placeholder + '}}', str(value))
             # Llenar tablas
             for table in template.tables:
                 for row in table.rows:
                     for cell in row.cells:
                         for paragraph in cell.paragraphs:
-                            for key, value in data.items():
-                                if '{{' + key + '}}' in paragraph.text:
-                                    paragraph.text = paragraph.text.replace('{{' + key + '}}', str(value))
+                            for placeholder, key in mapping.items():
+                                value = data.get(key, '')
+                                if '{{' + placeholder + '}}' in paragraph.text:
+                                    paragraph.text = paragraph.text.replace('{{' + placeholder + '}}', str(value))
             return template
         else:
             raise ValueError("Unsupported template type")
