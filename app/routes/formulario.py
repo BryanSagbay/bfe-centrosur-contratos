@@ -30,10 +30,11 @@ def submit_form():
             output_base_dir = os.path.join(os.path.dirname(__file__), '..', '..', 'output')
             if template_path.startswith('excel/'):
                 output_dir = os.path.join(output_base_dir, 'excel')
+                output_filename = f'filled_{os.path.splitext(os.path.basename(template_path))[0]}.xlsx'
             elif template_path.startswith('word/'):
                 output_dir = os.path.join(output_base_dir, 'word')
+                output_filename = f'filled_{os.path.basename(template_path)}'
             os.makedirs(output_dir, exist_ok=True)
-            output_filename = f'filled_{os.path.basename(template_path)}'
             output_path = os.path.join(output_dir, output_filename)
             template_loader.save_filled_template(filled_template, output_path)
             generated_files.append(output_path)

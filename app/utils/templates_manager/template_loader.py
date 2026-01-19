@@ -1,8 +1,9 @@
 # Lógica para cargar y gestionar plantillas de Excel y Word
 
-from openpyxl import load_workbook
+from openpyxl import load_workbook, Workbook
 from docx import Document
 import os
+import pandas as pd
 
 class TemplateLoader:
     def __init__(self, template_dir=None):
@@ -15,7 +16,18 @@ class TemplateLoader:
         if template_path.endswith('.xlsx'):
             return load_workbook(full_path)
         elif template_path.endswith('.xls'):
-            return load_workbook(full_path, engine='xlrd')
+            xls = pd.ExcelFile(full_path, engine='xlrd')
+            wb = Workbook()
+            for sheet_name in xls.sheet_names:
+                df = pd.read_excel(xls, sheet_name=sheet_name, engine='xlrd')
+                ws = wb.create_sheet(sheet_name)
+                for r, row in enumerate(df.values):
+                    for c, value in enumerate(row):
+                        ws.cell(row=r+1, column=c+1, value=value)
+            # Remove default sheet
+            if 'Sheet' in wb.sheetnames and len(wb.sheetnames) > len(xls.sheet_names):
+                wb.remove(wb['Sheet'])
+            return wb
         elif template_path.endswith('.docx'):
             return Document(full_path)
         else:
