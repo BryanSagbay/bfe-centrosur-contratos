@@ -2,7 +2,7 @@ from flask import Blueprint, request
 from utils.templates_manager.template_loader import TemplateLoader
 import os
 from docx2pdf import convert
-import datetime
+from datetime import datetime  # Cambiado: importar datetime directamente
 
 formulario_bp = Blueprint('formulario', __name__)
 
@@ -16,9 +16,10 @@ def submit_form():
             if key != 'templates':
                 data[key] = request.form[key]
         
+        # Validar fecha si existe
         if 'fecha_entrega_documentos' in data and data['fecha_entrega_documentos']:
-            datetime.datetime.strptime(
-            data['fecha_entrega_documentos'], '%d-%m-%Y'
+            datetime.strptime(  # Corregido: ya no necesita datetime.datetime
+                data['fecha_entrega_documentos'], '%d-%m-%Y'
             )
 
         selected_templates = request.form.getlist('templates')
@@ -41,6 +42,11 @@ def submit_form():
             elif template_path.startswith('word/'):
                 output_dir = os.path.join(output_base_dir, 'word')
                 output_filename = f'filled_{os.path.basename(template_path)}'
+            else:
+                # Manejar caso por defecto
+                output_dir = output_base_dir
+                output_filename = f'filled_{os.path.basename(template_path)}'
+                
             os.makedirs(output_dir, exist_ok=True)
             output_path = os.path.join(output_dir, output_filename)
             template_loader.save_filled_template(filled_template, output_path)
