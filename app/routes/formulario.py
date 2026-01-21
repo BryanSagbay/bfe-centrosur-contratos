@@ -2,6 +2,7 @@ from flask import Blueprint, request
 from utils.templates_manager.template_loader import TemplateLoader
 import os
 from docx2pdf import convert
+import datetime
 
 formulario_bp = Blueprint('formulario', __name__)
 
@@ -15,6 +16,11 @@ def submit_form():
             if key != 'templates':
                 data[key] = request.form[key]
         
+        if 'fecha_entrega_documentos' in data and data['fecha_entrega_documentos']:
+            datetime.datetime.strptime(
+            data['fecha_entrega_documentos'], '%d-%m-%Y'
+            )
+
         selected_templates = request.form.getlist('templates')
         if not selected_templates:
             return "Error: No se seleccionaron plantillas"

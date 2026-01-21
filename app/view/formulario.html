@@ -284,11 +284,13 @@
                 <div class="section-title">Seleccionar Plantillas a Generar</div>
                 <div class="checkbox-grid">
                     <label class="checkbox-item">
-                        <input type="checkbox" name="templates" value="excel/ACTA DE ENTREGA DEL CARNET CON DESCUENTO.xlsx">
+                        <input type="checkbox" name="templates"
+                            value="excel/ACTA DE ENTREGA DEL CARNET CON DESCUENTO.xlsx">
                         <span>ACTA DE ENTREGA DEL CARNET CON DESCUENTO</span>
                     </label>
                     <label class="checkbox-item">
-                        <input type="checkbox" name="templates" value="excel/ACTA DE ENTREGA DEL CARNET SIN DESCUENTO.xlsx">
+                        <input type="checkbox" name="templates"
+                            value="excel/ACTA DE ENTREGA DEL CARNET SIN DESCUENTO.xlsx">
                         <span>ACTA DE ENTREGA DEL CARNET SIN DESCUENTO</span>
                     </label>
                     <label class="checkbox-item">
@@ -296,7 +298,8 @@
                         <span>CONSTANCIA DE ENTREGA DE DOCUMENTOS</span>
                     </label>
                     <label class="checkbox-item">
-                        <input type="checkbox" name="templates" value="excel/R-DTH-411.1 ACTA ENTREGA DESCRIPTIVO CARGO.xlsx">
+                        <input type="checkbox" name="templates"
+                            value="excel/R-DTH-411.1 ACTA ENTREGA DESCRIPTIVO CARGO.xlsx">
                         <span>R-DTH-411.1 ACTA ENTREGA DESCRIPTIVO CARGO</span>
                     </label>
                     <label class="checkbox-item">
@@ -304,11 +307,13 @@
                         <span>R-DTH-552 AUTORIZACIÓN DE CAUCIÓN</span>
                     </label>
                     <label class="checkbox-item">
-                        <input type="checkbox" name="templates" value="excel/R-DTH-557.2 HOJA DE RUTA DE INDUCCIÓN GENÉRICA.xlsx">
+                        <input type="checkbox" name="templates"
+                            value="excel/R-DTH-557.2 HOJA DE RUTA DE INDUCCIÓN GENÉRICA.xlsx">
                         <span>R-DTH-557.2 HOJA DE RUTA DE INDUCCIÓN GENÉRICA</span>
                     </label>
                     <label class="checkbox-item">
-                        <input type="checkbox" name="templates" value="word/R-DTH-410.1 ACTA RECEPCIÓN REGLAMENTO INTERNO DE TRABAJO.docx">
+                        <input type="checkbox" name="templates"
+                            value="word/R-DTH-410.1 ACTA RECEPCIÓN REGLAMENTO INTERNO DE TRABAJO.docx">
                         <span>R-DTH-410.1 ACTA RECEPCIÓN REGLAMENTO INTERNO DE TRABAJO</span>
                     </label>
                     <label class="checkbox-item">
@@ -348,14 +353,19 @@
             const fecha = new Date(fechaPrincipal.value + 'T00:00:00');
 
             const dia = fecha.getDate();
-            const mes = meses[fecha.getMonth()];
+            const mesNumero = fecha.getMonth() + 1;
             const anio = fecha.getFullYear();
 
             inputDia.value = dia;
-            inputMes.value = mes;
+            inputMes.value = meses[fecha.getMonth()];
             inputAnio.value = anio;
-            inputFechaCompleta.value = `${dia} de ${mes} de ${anio}`;
+
+            const diaFormateado = String(dia).padStart(2, '0');
+            const mesFormateado = String(mesNumero).padStart(2, '0');
+
+            inputFechaCompleta.value = `${diaFormateado}-${mesFormateado}-${anio}`;
         }
+
 
         // Actualizar cuando cambie la fecha
         fechaPrincipal.addEventListener('change', actualizarCamposFecha);
@@ -364,7 +374,7 @@
         actualizarCamposFecha();
 
         // Marcar todos los checkboxes
-        document.getElementById('selectAll').addEventListener('change', function() {
+        document.getElementById('selectAll').addEventListener('change', function () {
             const checkboxes = document.querySelectorAll('input[name="templates"]');
             checkboxes.forEach(cb => cb.checked = this.checked);
         });
