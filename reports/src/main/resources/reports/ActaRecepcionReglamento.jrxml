@@ -1,0 +1,78 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="ActaRecepcionReglamento" language="java" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e62b62e-7065-4568-9cfd-1d7f3363685a">
+    <parameter name="colaborador" class="java.lang.String"/>
+    <parameter name="cedula" class="java.lang.String"/>
+    <parameter name="dia" class="java.lang.String"/>
+    <parameter name="mes" class="java.lang.String"/>
+    <parameter name="anio" class="java.lang.String"/>
+    <query language="sql"><![CDATA[]]></query>
+    <background splitType="Stretch"/>
+    <title height="79" splitType="Stretch">
+        <element kind="frame" uuid="fd69f373-9589-4b23-b397-b58a8f287180" mode="Transparent" x="130" y="10" width="300" height="60">
+            <element kind="staticText" uuid="af1910a1-0c7e-44d9-9469-7c08c311144c" x="25" y="17" width="250" height="20" fontName="Arial">
+                <text><![CDATA[ACTA DE RECEPCIÓN REGLAMENTO INTERNO DE]]></text>
+            </element>
+            <element kind="staticText" uuid="3d302242-c1f4-4283-9376-20facf4e65de" x="127" y="32" width="50" height="20" fontName="Arial">
+                <text><![CDATA[TRABAJO]]></text>
+            </element>
+            <box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="c6dc76ae-66d4-4896-8293-2413cfaaf52e" x="11" y="10" width="119" height="60">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <element kind="image" uuid="717d16d0-f10e-41e7-91fd-eec556c284c5" x="3" y="9" width="113" height="43">
+                <expression><![CDATA["https://portalcs.centrosur.gob.ec/assets/imagenes/portalcs-bg.png"]]></expression>
+            </element>
+            <box>
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="b65800c5-618c-42d7-92fb-090f4043a519" x="430" y="10" width="130" height="60">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <element kind="staticText" uuid="d3184931-02b8-4d4d-90ba-ecf98c24af8e" x="13" y="24" width="110" height="20" fontName="Arial" fontSize="9.5">
+                <text><![CDATA[Código: R-DTH-410.1]]></text>
+            </element>
+            <box>
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+    </title>
+    <pageHeader height="35" splitType="Stretch"/>
+    <columnHeader height="186" splitType="Stretch">
+        <element kind="staticText" uuid="51488ff0-e90c-493e-97cb-6c0f2908731c" x="141" y="11" width="300" height="20" fontName="Arial">
+            <text><![CDATA[ACTA DE RECEPCIÓN REGLAMENTO INTERNO DE TRABAJO]]></text>
+        </element>
+        <element kind="textField" uuid="d2641442-959c-4005-8e24-f2736ead1bc0" x="70" y="60" width="430" height="100" fontName="Arial">
+            <expression><![CDATA["Por medio de la presente yo, Sr/Sra. "+ $P{colaborador} +", con cédula de ciudadanía No."+$P{cedula}+" dejo expresa constancia de que he recibido una copia legible y en buen estado del Reglamento Interno de Trabajo vigente de la Empresa Eléctrica Regional Centro Sur C.A." + "\n\nEn caso de requerir una copia digital, la puede encontrar en el Manual de Procesos y Procedimientos de la CENTROSUR." ]]></expression>
+        </element>
+        <element kind="textField" uuid="5d8e308b-588d-410c-a86e-25f39bd41ea7" positionType="Float" x="70" y="162" width="200" height="14" fontName="Arial">
+            <expression><![CDATA["Cuenca, " + $P{dia} + " de " + $P{mes} + " de " + $P{anio}+ "."]]></expression>
+        </element>
+    </columnHeader>
+    <detail>
+        <band height="174" splitType="Stretch">
+            <element kind="staticText" uuid="654953c3-2a69-451b-94a8-8fb987cc11db" x="70" y="31" width="71" height="14" fontName="Arial">
+                <text><![CDATA[Atentamente;]]></text>
+            </element>
+            <element kind="rectangle" uuid="dc3db51a-40ee-48c0-8a39-4a0a9a06df81" x="70" y="99" width="160" height="1">
+                <pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.8627451)"/>
+            </element>
+            <element kind="staticText" uuid="77e43d66-30bb-49cd-a065-b741bb94d2b2" x="70" y="102" width="34" height="14" fontName="Arial">
+                <text><![CDATA[Sr/Sra.]]></text>
+            </element>
+            <element kind="staticText" uuid="7a3eb934-8ab0-473f-8b12-ef389e7ce391" x="70" y="116" width="14" height="14" fontName="Arial">
+                <text><![CDATA[CI.]]></text>
+            </element>
+            <element kind="textField" uuid="375b5ea3-8e36-4a53-b7e3-b4bc158ec54d" x="104" y="102" width="120" height="14" fontName="Arial">
+                <expression><![CDATA[$P{colaborador}]]></expression>
+            </element>
+            <element kind="textField" uuid="9d008e57-fc5a-44f6-a5be-f61f3cd863f2" x="84" y="116" width="70" height="14" fontName="Arial">
+                <expression><![CDATA[$P{cedula}]]></expression>
+            </element>
+        </band>
+    </detail>
+    <columnFooter height="45" splitType="Stretch"/>
+    <pageFooter height="54" splitType="Stretch"/>
+    <summary height="42" splitType="Stretch"/>
+</jasperReport>

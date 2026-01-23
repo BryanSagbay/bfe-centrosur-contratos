@@ -1,0 +1,403 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="ConstanciaEntregaDocumentos" language="java" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="acc34f75-a89f-48af-8954-ff70ed1742cd">
+    <dataset name="Dataset1" uuid="ed2dacf0-271b-40bd-aaf2-042e77edb271">
+        <query language="sql"><![CDATA[]]></query>
+    </dataset>
+    <parameter name="colaborador" class="java.lang.String"/>
+    <parameter name="area_departamento" class="java.lang.String"/>
+    <parameter name="cargo" class="java.lang.String"/>
+    <parameter name="reemplazo" class="java.lang.String"/>
+    <parameter name="fecha_entrega_documentos" class="java.lang.String"/>
+    <query language="sql"><![CDATA[]]></query>
+    <background splitType="Stretch"/>
+    <title height="79" splitType="Stretch">
+        <element kind="frame" uuid="08c58139-3bc5-49f9-96d6-a850a3e6d2bb" x="11" y="10" width="119" height="60">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <element kind="image" uuid="bb435d84-e35f-41d2-804f-b165eff6f0ed" x="3" y="9" width="113" height="43">
+                <expression><![CDATA["https://portalcs.centrosur.gob.ec/assets/imagenes/portalcs-bg.png"]]></expression>
+            </element>
+            <box>
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="72e1cd90-6bf7-4cab-afde-c5ec87853a00" mode="Transparent" x="130" y="10" width="300" height="60">
+            <element kind="staticText" uuid="31170456-9ad4-4e09-a50e-8b6e370d9b8b" x="20" y="23" width="268" height="20" fontName="Arial" fontSize="11.5">
+                <text><![CDATA[CONSTANCIA DE ENTREGA DE DOCUMENTOS]]></text>
+            </element>
+            <box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="8f5c20a0-786d-4b89-8cf1-2bd08db85753" x="430" y="10" width="130" height="60">
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <element kind="staticText" uuid="1a24d566-484e-4544-a566-b8ba375b72cd" x="18" y="19" width="98" height="30" fontName="Arial" fontSize="10.0">
+                <text><![CDATA[Código: R-DTH-
+Versión: 0]]></text>
+            </element>
+            <box>
+                <pen lineWidth="0.5"/>
+            </box>
+        </element>
+    </title>
+    <pageHeader height="108" splitType="Stretch">
+        <element kind="staticText" uuid="74396752-72d7-4e8e-896b-d0a4dd8916d8" x="10" y="21" width="60" height="19" fontName="Arial">
+            <text><![CDATA[Colaborador:]]></text>
+        </element>
+        <element kind="staticText" uuid="de484cf7-90a1-45d0-a5f3-38b54aefc7a9" x="10" y="40" width="50" height="19" fontName="Arial">
+            <text><![CDATA[Área/Dpto:]]></text>
+        </element>
+        <element kind="staticText" uuid="d924cfa7-f32b-4748-894e-ae6f3a2757b8" x="10" y="59" width="32" height="19" fontName="Arial">
+            <text><![CDATA[Cargo:]]></text>
+        </element>
+        <element kind="staticText" uuid="4a6b1cac-a06b-4986-af33-7155e5dcd63e" x="10" y="78" width="56" height="19" fontName="Arial">
+            <text><![CDATA[Reemplazo:]]></text>
+        </element>
+        <element kind="rectangle" uuid="b79c5be4-be7c-4c7f-ac68-5fbeb4e63d84" x="449" y="1" width="100" height="100"/>
+        <element kind="textField" uuid="6c86aebc-e2b8-407e-b6a7-9c6a1676ad06" x="70" y="21" width="220" height="19" fontName="Arial">
+            <expression><![CDATA[$P{colaborador}]]></expression>
+        </element>
+        <element kind="textField" uuid="c81cceaf-b34e-4e39-b634-66a52148c1f2" x="60" y="40" width="220" height="19" fontName="Arial">
+            <expression><![CDATA[$P{area_departamento}]]></expression>
+        </element>
+        <element kind="textField" uuid="9dd4aa34-dacd-4ff9-977f-dcf1b0d98a01" x="42" y="59" width="240" height="19" fontName="Arial">
+            <expression><![CDATA[$P{cargo}]]></expression>
+        </element>
+        <element kind="textField" uuid="b8cc1700-c64a-4ab1-8058-780c9d852ade" x="66" y="78" width="220" height="19" fontName="Arial">
+            <expression><![CDATA[$P{reemplazo}]]></expression>
+        </element>
+    </pageHeader>
+    <columnHeader height="565" splitType="Stretch">
+        <element kind="staticText" uuid="9c84483c-b696-4551-b367-4a185c4925ca" x="450" y="0" width="60" height="19" fontName="Arial">
+            <text><![CDATA[Contratación]]></text>
+        </element>
+        <element kind="staticText" uuid="442e766a-7ce1-483a-bffe-d8b398036366" x="450" y="20" width="71" height="19" fontName="Arial">
+            <text><![CDATA[Recontratación]]></text>
+        </element>
+        <element kind="staticText" uuid="8686b503-df31-4dd5-9a3b-5e3ee0c0c856" x="450" y="40" width="51" height="19" fontName="Arial">
+            <text><![CDATA[Promoción]]></text>
+        </element>
+        <element kind="staticText" uuid="0feb7b98-1b2c-4e81-a89f-ad1143430df3" x="11" y="31" width="210" height="16" fontName="Arial">
+            <text><![CDATA[• DOCUMENTOS PARA REMUNERACIONES]]></text>
+        </element>
+        <element kind="staticText" uuid="32675038-a669-4017-bcf7-63d5216c3333" x="23" y="47" width="406" height="109" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[1. Solicitud de empleo
+2. Una fotografía tamaño carnet a colores en fondo blanco.
+3. Una copia de la Cédula de ciudadanía y certificado de votación de las últimas elecciones a colores.
+4. Copia a colores de la licencia de conducir. (si aplica)
+5. Certificados de experiencia y honorabilidad.
+6. Consolidado de Aportes al IESS. (Resumen por empleador)
+7. Certificado de no tener impedimento para ejercer cargos públicos. (online página Ministerio de Trabajo)
+8. Constancia de la Declaración Patromonial Jurada (online Contraloría General del Estado)
+9. Declaración juramentada de que no es contratista activo de CENTROSUR
+10. Certificado de cuenta activa (corriente o de ahorros)
+11. Para el caso de personas con Discapacidad: copia a colores del carnet del CONADIS.]]></text>
+        </element>
+        <element kind="staticText" uuid="3fd4d0b3-050a-4dc7-a747-032c03e2eeab" x="411" y="173" width="139" height="16" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[RECEPCIÓN REMUNERACIONES]]></text>
+        </element>
+        <element kind="textField" uuid="acbd5de3-dce5-41b0-a1f5-78a8df0a1f8e" x="445" y="183" width="104" height="19" fontSize="8.6">
+            <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
+        </element>
+        <element kind="staticText" uuid="c8d9d700-c994-42a9-bcd6-ac539bc38a13" x="411" y="183" width="34" height="19" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[FECHA:]]></text>
+        </element>
+        <element kind="rectangle" uuid="3bd86f22-e1bf-4dd7-9512-635131f18c73" x="411" y="170" width="139" height="1">
+            <pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.8627451)"/>
+        </element>
+        <element kind="staticText" uuid="eb905b4a-843b-4980-ab15-1585beba3770" x="11" y="201" width="210" height="16" fontName="Arial">
+            <text><![CDATA[• DOCUMENTOS PARA CAPACITACIÓN]]></text>
+        </element>
+        <element kind="staticText" uuid="7f7f52f6-4f81-4293-b9b5-79309f24a537" x="24" y="217" width="316" height="51" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[1. Copia del título de bachiller.
+2. Copia de título (s) universitarios
+3. Copia de los certificados de capacitación o formación.
+4. Copia a colores  de la Licencia de Prevención de Riesgos Eléctricos, vigente.
+5. Certificado de Operador del Sistema Nacional de Contratación Pública, vigente.]]></text>
+        </element>
+        <element kind="staticText" uuid="7b0a2324-58c7-42d7-b53d-55677a6b779e" x="11" y="310" width="210" height="16" fontName="Arial">
+            <text><![CDATA[• DOCUMENTOS PARA TRABAJO SOCIAL]]></text>
+        </element>
+        <element kind="staticText" uuid="8454759e-debf-4a47-9ac1-f50ef67c0d57" x="24" y="326" width="276" height="63" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[1. Una foto tamaño carnet a colores en fondo blanco
+2. Una copia de la cédula de identidad
+3. Una copia de la cédula de identidad del cónyuge
+4. Una copia de la cédula de identidad de los hijos (menores de edad)
+5. Una foto a colores tamaño carnet de las cargas familiares.
+6. Una copia de la Partida de Matrimonio en caso de ser procedente.]]></text>
+        </element>
+        <element kind="staticText" uuid="15897e7e-3c75-4ce6-aa39-e6f3a99eaa06" x="411" y="286" width="139" height="16" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[RECEPCIÓN CAPACITACIÓN]]></text>
+        </element>
+        <element kind="textField" uuid="d992f36a-769d-42ae-a8fb-217d748f9c6a" x="445" y="296" width="104" height="19" fontSize="8.6">
+            <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
+        </element>
+        <element kind="staticText" uuid="d926df2c-cfc5-4807-a4a0-b203c86cd445" x="411" y="296" width="34" height="19" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[FECHA:]]></text>
+        </element>
+        <element kind="rectangle" uuid="7dbad1d4-d86d-4926-9c1c-d6f4b03db016" x="411" y="283" width="139" height="1">
+            <pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.8627451)"/>
+        </element>
+        <element kind="staticText" uuid="8469c3d4-b9b2-4206-b598-1fa08274cb99" x="24" y="447" width="286" height="83" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[1. Informe preocupacional Comisión DTH
+2. Certificado de aptitud preocupacional
+3. Acta recepción descriptivo del cargo
+4. Acta recepción del Reglamento Interno
+5. Acta recepción del carnet de identificación
+6. Caución
+7. Acta de aceptación de valoraciones preocupacionales
+8. Formato de debidas diligencias en la incorporación de colaboradores.]]></text>
+        </element>
+        <element kind="staticText" uuid="29240ff4-7ec0-466b-a306-37bef4502a6f" x="11" y="431" width="299" height="16" fontName="Arial">
+            <text><![CDATA[• DOCUMENTOS  DE SELECCIÓN PARA REMUNERACIONES]]></text>
+        </element>
+        <element kind="staticText" uuid="66d26837-8c5c-4e9f-a836-6b68e17d724f" x="411" y="403" width="139" height="16" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[RECEPCIÓN TRABAJO SOCIAL]]></text>
+        </element>
+        <element kind="textField" uuid="483d0679-ee28-4f22-9746-c13507049b19" x="445" y="413" width="104" height="19" fontSize="8.6">
+            <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
+        </element>
+        <element kind="staticText" uuid="42531eb4-56f0-4466-a72d-2ebf72b6d394" x="411" y="413" width="34" height="19" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[FECHA:]]></text>
+        </element>
+        <element kind="rectangle" uuid="2c6ec80b-88f1-4b9b-a78b-d1741e70e43d" x="411" y="400" width="139" height="1">
+            <pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.8627451)"/>
+        </element>
+        <element kind="staticText" uuid="fd3086aa-0351-4e61-9bae-7093a7ef7a77" x="411" y="524" width="139" height="16" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[RECEPCIÓN REMUNERACIONES]]></text>
+        </element>
+        <element kind="textField" uuid="43bf8770-c71e-4f1a-b41d-681f3f59c3de" x="445" y="534" width="104" height="19" fontSize="8.6">
+            <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
+        </element>
+        <element kind="staticText" uuid="0aae3bfc-ba0b-4b9b-bc03-40d92edb2391" x="411" y="534" width="34" height="19" fontName="Arial" fontSize="8.6">
+            <text><![CDATA[FECHA:]]></text>
+        </element>
+        <element kind="rectangle" uuid="481fcdc2-faae-4eaa-9f62-5ebf85033ab6" x="411" y="521" width="139" height="1">
+            <pen lineWidth="1.0" lineStyle="Solid" lineColor="rgba(0, 0, 0, 0.8627451)"/>
+        </element>
+        <element kind="frame" uuid="076122c4-24b7-4b8a-aa6a-56fef17018a0" x="540" y="40" width="11" height="11">
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="dd4ae529-49cb-4336-8eda-c7393f7ce5b1" x="540" y="20" width="11" height="11">
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="c556fc8c-b754-43e6-afc5-0eabc3ae788d" x="540" y="0" width="11" height="11">
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="04f5ffa2-28ac-468e-a710-5999c81f7909" x="11" y="47" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="986f0ed5-d74b-46ec-abbe-221d2a358230" x="11" y="57" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="f98f214a-245c-40dc-80d2-c23329277d2d" x="11" y="67" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="61df214c-2b91-41ea-a5c9-c688df3e053d" x="11" y="77" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="30a9ec95-cae1-44ce-b4f9-487e2efaf7de" x="11" y="87" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="037c6d04-caed-415a-ba42-dab86b4b61c7" x="11" y="97" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="03f2f26d-2226-459c-b585-049ee869be39" x="11" y="107" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="5e643bd1-bafd-4a19-8231-5c25b8fe9248" x="11" y="117" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="5097a638-67ba-4e47-b4e8-06728d16131a" x="11" y="127" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="2d75e61e-3994-441a-8240-0604108e5fcc" x="11" y="137" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="db3dff56-737a-42f9-91ab-5def1b3b3395" x="11" y="147" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="f4ca32f5-9850-44c0-9da9-fc361e7fd16e" x="11" y="217" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="a5550b12-aedc-4a2b-863d-4592a4df5ce4" x="11" y="227" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="b37741ef-6140-4ebc-8649-89f3188dc81e" x="11" y="237" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="03952222-0fe9-4987-b4ef-4ade29ac2a3f" x="11" y="247" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="87c9607c-2e7a-452f-851e-65bf3b0d5976" x="11" y="257" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="09aa96d5-8fb3-4456-9632-84efbea09e73" x="11" y="326" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="9678cc12-c070-4b3f-a1c9-865e3687cbf9" x="11" y="336" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="04f149f6-0a15-4d80-8974-f4a4b6eb9d87" x="11" y="346" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="56f7c477-27d4-43d6-880d-6211ed08f362" x="11" y="356" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="124d6694-6c1b-4772-a549-87c8a6c56702" x="11" y="366" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="f78d68c3-6c19-43f9-ad20-70797de4dd3c" x="11" y="376" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="e72ad4ac-44ce-4a50-9cc0-e9a5c5ecae69" x="11" y="447" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="1e541026-c819-4f5c-b446-75327556d459" x="11" y="457" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="76dc1059-6c62-4ab4-b034-857685f8ad3a" x="11" y="467" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="a1b55a0e-bfce-4041-b5b5-d14b9f76004f" x="11" y="477" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="3dd726a1-8aeb-4221-a1cc-a565965d0205" x="11" y="487" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="849a784e-eeac-48e4-801e-196cf3182112" x="11" y="497" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="db37db7b-053f-4b8e-9399-e0c128428136" x="11" y="507" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+        <element kind="frame" uuid="dc03a350-873c-4128-abea-95751e57223d" x="11" y="517" width="9" height="8">
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <property name="com.jaspersoft.studio.unit.height" value="px"/>
+            <box>
+                <pen lineWidth="0.75"/>
+            </box>
+        </element>
+    </columnHeader>
+</jasperReport>
