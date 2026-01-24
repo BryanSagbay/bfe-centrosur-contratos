@@ -1,6 +1,6 @@
 <!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
-<jasperReport name="AutotizacionCaucion" language="java" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0eab29db-8683-4818-8748-9730205b124e">
-
+<jasperReport name="Blank_A4_2" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e144ac2-48cc-4f69-ba7a-c866733b89b7">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sample DB"/>
     <parameter name="ciudad_colaborador" class="java.lang.String"/>
     <parameter name="direccion" class="java.lang.String"/>
     <parameter name="colaborador" class="java.lang.String"/>
@@ -11,191 +11,134 @@
     <parameter name="responsable_DTH" class="java.lang.String"/>
     <query language="sql"><![CDATA[]]></query>
     <background splitType="Stretch"/>
-    <title height="79" splitType="Stretch">
-        <element kind="frame" uuid="4c096b59-dcd1-42ea-b8a8-9f9f4ac22e92" mode="Transparent" x="130" y="10" width="300" height="60">
-            <element kind="staticText" uuid="f35e54b5-779c-4fd7-a0b2-1579937af0a3" x="28" y="16" width="246" height="34" fontName="Arial" fontSize="12.0" hTextAlign="Center">
-                <text><![CDATA[ACTA DE ENTREGA DEL CARNET DE IDENTIFICACIÓN]]></text>
-            </element>
-            <box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0">
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-        <element kind="frame" uuid="f295f714-d575-4b75-b802-87a468caf45a" x="11" y="10" width="119" height="60">
-            <property name="com.jaspersoft.studio.unit.height" value="px"/>
-            <element kind="image" uuid="d3fed116-91ff-4c03-a18c-1da32fe16fad" x="3" y="9" width="113" height="43">
-                <expression><![CDATA["/images/portalcs-bg.png"]]></expression>
-            </element>
-            <box>
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-        <element kind="frame" uuid="6bc49f00-2b96-420e-a395-abf64bf7c849" x="430" y="10" width="130" height="60">
-            <property name="com.jaspersoft.studio.unit.height" value="px"/>
-            <element kind="staticText" uuid="d7e1e6ab-c6c7-44ca-a71b-054c7e2e3fb8" x="13" y="24" width="110" height="20" fontName="Arial" fontSize="9.5">
-                <text><![CDATA[Código:]]></text>
-            </element>
-            <box>
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-    </title>
-    <pageHeader height="279" splitType="Stretch">
-        <element kind="frame" uuid="92b76994-2cc0-432e-bb15-f3f10580a5d5" stretchType="ContainerHeight" x="11" y="-9" width="549" height="59">
-            <element kind="staticText" uuid="b6cb75da-b077-4104-b883-b64d8ccec953" x="11" y="12" width="42" height="20" forecolor="#13702A" fontName="Arial">
-                <text><![CDATA[CIUDAD:]]></text>
-                <box>
-                    <pen lineColor="#0A8228"/>
-                </box>
-            </element>
-            <element kind="textField" uuid="b271a2e9-871c-46dc-946a-d1944f00d611" x="54" y="12" width="170" height="20" fontName="Arial" textAdjust="StretchHeight">
-                <expression><![CDATA[$P{ciudad_colaborador}]]></expression>
-            </element>
-            <element kind="textField" uuid="4b67a218-a0ca-40d3-a877-79f6440ec31b" x="71" y="32" width="170" height="20" fontName="Arial" textAdjust="StretchHeight">
-                <expression><![CDATA[$P{direccion}]]></expression>
-            </element>
-            <element kind="staticText" uuid="5117100a-e223-4e22-b4e4-fd10294deac7" x="11" y="32" width="60" height="20" forecolor="#13702A" fontName="Arial">
-                <text><![CDATA[DIRECCIÓN:]]></text>
-                <box>
-                    <pen lineColor="#0A8228"/>
-                </box>
-            </element>
-            <box>
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-
-        <element kind="frame" uuid="9e93b1e3-1538-4bdd-a5c4-f7ceeabfd19f" positionType="Float" stretchType="ContainerHeight" x="11" y="50" width="549" height="60">
-            <element kind="textField" uuid="55b3aba2-4487-4227-be22-ff759abfe6d8" x="12" y="18" width="526" height="35" fontName="Arial" textAdjust="StretchHeight">
-                <expression><![CDATA["Yo, "+$P{colaborador}+", certifico haber recibido el carnet de identificación como Servidor de CENTROSUR y a la vez me comprometo al buen uso del mismo. "]]></expression>
-            </element>
-            <box>
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-
-        <element kind="frame" uuid="25141096-6281-4e38-97a1-b8f34d1e1226" positionType="Float" stretchType="ContainerHeight" x="11" y="110" width="549" height="140">
-            <!-- Headers de la tabla -->
-            <element kind="frame" uuid="2792b90d-0abd-4dfc-9b31-b20c074134de" x="12" y="14" width="72" height="20">
-                <element kind="staticText" uuid="77a1d5b3-8d40-42ff-ad29-59c48f056c40" x="17" y="5" width="38" height="18" forecolor="#2278FF" fontName="Arial">
-                    <text><![CDATA[FECHA]]></text>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="362ac89f-abb5-4fbe-87b4-a4472e0257e9" x="84" y="14" width="119" height="20">
-                <element kind="staticText" uuid="84028f11-0ef1-467f-9f45-7c4f3b70e0f0" x="30" y="5" width="58" height="18" forecolor="#2278FF" fontName="Arial">
-                    <text><![CDATA[APELLIDOS]]></text>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="b8afe6be-05f8-43c2-8008-3aed4f7da4e6" x="203" y="14" width="119" height="20">
-                <element kind="staticText" uuid="306d7e74-c6cb-4f59-987c-413cf3b7d01b" x="34" y="5" width="51" height="18" forecolor="#2278FF" fontName="Arial">
-                    <text><![CDATA[NOMBRES]]></text>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="71b8c42f-6430-4f14-b4bd-b4699191e5af" x="322" y="14" width="117" height="20">
-                <element kind="staticText" uuid="511da921-49ce-4f57-8666-3b7ccd462d0f" x="38" y="5" width="40" height="18" forecolor="#2278FF" fontName="Arial">
-                    <text><![CDATA[CARGO]]></text>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="c210414f-4bb6-446a-a25c-d6471b13a488" x="439" y="14" width="100" height="20">
-                <element kind="staticText" uuid="8288b2d6-4c77-4a5b-bc75-dcb5ba6220cc" x="32" y="5" width="36" height="18" forecolor="#2278FF" fontName="Arial">
-                    <text><![CDATA[FIRMA]]></text>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <!-- Datos de la tabla -->
-            <element kind="frame" uuid="753ba696-b590-485d-aedb-82a6169b8ea4" positionType="Float" stretchType="ContainerHeight" x="12" y="34" width="72" height="40">
-                <element kind="textField" uuid="cee8e3f1-cded-4eac-b5c1-1f89c3a0245e" positionType="Float" x="3" y="7" width="66" height="25" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" textAdjust="StretchHeight">
-                    <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="d6ef614a-8868-48b9-8362-857c617846fb" positionType="Float" stretchType="ContainerHeight" x="84" y="34" width="119" height="40">
-                <element kind="textField" uuid="eb283c43-0a18-4338-961a-a4ea6e6dd70c" positionType="Float" x="6" y="7" width="106" height="25" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" textAdjust="StretchHeight">
-                    <expression><![CDATA[$P{colaborador_apellidos}]]></expression>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="9a5f4850-0d14-458b-b5c0-598d9b2c3fca" positionType="Float" stretchType="ContainerHeight" x="203" y="34" width="119" height="40">
-                <element kind="textField" uuid="66372b21-a058-4335-8f1c-8fe6a6adbbb1" positionType="Float" x="6" y="7" width="106" height="25" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" textAdjust="StretchHeight">
-                    <expression><![CDATA[$P{colaborador_nombres}]]></expression>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="d026a095-721d-49a6-957a-02fbf51e9757" positionType="Float" stretchType="ContainerHeight" x="322" y="34" width="117" height="40">
-                <element kind="textField" uuid="2917aac9-d7e2-401c-87ec-f59584f0dab7" positionType="Float" x="5" y="7" width="105" height="25" hTextAlign="Center" vTextAlign="Middle" fontName="Arial" textAdjust="StretchHeight">
-                    <expression><![CDATA[$P{cargo}]]></expression>
-                </element>
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <element kind="frame" uuid="34e02adc-d515-43a3-8f71-77cc425e6ad4" positionType="Float" stretchType="ContainerHeight" x="439" y="34" width="100" height="40">
-                <box>
-                    <pen lineWidth="0.5"/>
-                </box>
-            </element>
-
-            <!-- Información de entrega -->
-            <element kind="staticText" uuid="0b00acd3-9a30-4d19-8397-22d70ea731fa" positionType="Float" x="130" y="90" width="136" height="20" forecolor="#030303" fontName="Arial">
-                <text><![CDATA[Responsable de entrega DTH:]]></text>
-                <box>
-                    <pen lineColor="#0A8228"/>
-                </box>
-            </element>
-
-            <element kind="textField" uuid="42d66f33-7da2-4b5c-84d1-06be10716184" positionType="Float" x="266" y="90" width="170" height="20" fontName="Arial" textAdjust="StretchHeight">
-                <expression><![CDATA[$P{responsable_DTH}]]></expression>
-            </element>
-
-            <element kind="staticText" uuid="50424548-b3ed-4c1e-b917-a9b84a5d5681" positionType="Float" x="234" y="110" width="32" height="20" forecolor="#030303" fontName="Arial">
-                <text><![CDATA[Fecha:]]></text>
-                <box>
-                    <pen lineColor="#0A8228"/>
-                </box>
-            </element>
-
-            <element kind="textField" uuid="72c990df-b63f-4e6f-ae9d-5b7b9c2c9c59" positionType="Float" x="266" y="110" width="170" height="20" fontName="Arial" textAdjust="StretchHeight">
-                <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
-            </element>
-
-            <box>
-                <pen lineWidth="0.5"/>
-            </box>
-        </element>
-    </pageHeader>
-    <columnHeader height="249" splitType="Stretch"/>
     <detail>
-        <band height="125" splitType="Stretch"/>
+        <band height="349" splitType="Stretch">
+            <!-- ENCABEZADO -->
+            <element kind="staticText" uuid="6c00c5ef-33cd-4167-91fc-ed7d81899fd6" x="130" y="10" width="300" height="60" fontSize="12.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[ACTA DE ENTREGA DEL CARNET DE IDENTIFICACIÓN]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="cc392983-357a-4d6d-be3f-c32a8b078abf" x="430" y="10" width="109" height="60" fontSize="9.5" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[  Código:]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="image" uuid="4d30cee0-829f-4175-a31b-01d4084e74e0" x="10" y="10" width="120" height="60" hImageAlign="Center" vImageAlign="Middle">
+                <expression><![CDATA["https://portalcs.centrosur.gob.ec/assets/imagenes/portalcs-bg.png"]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+
+            <!-- FRAME DE CIUDAD Y DIRECCIÓN -->
+            <element kind="frame" uuid="f66c0ea0-e211-47e8-a0da-4057efc292f7" x="10" y="70" width="529" height="60">
+                <element kind="staticText" uuid="b316fba7-2767-4a57-9a2b-16728c04517f" x="10" y="10" width="45" height="20" forecolor="#03A631" hTextAlign="Left" vTextAlign="Middle">
+                    <text><![CDATA[CIUDAD: ]]></text>
+                    <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                </element>
+                <element kind="staticText" uuid="72ca08e3-1dcb-4873-8be6-effd7d69cbe1" x="10" y="30" width="60" height="20" forecolor="#03A631" hTextAlign="Left" vTextAlign="Middle">
+                    <text><![CDATA[DIRECCIÓN:]]></text>
+                </element>
+                <element kind="textField" uuid="74a4afb7-7236-4d5b-a4d5-7e6154f98547" x="55" y="10" width="314" height="20" hTextAlign="Left" vTextAlign="Middle">
+                    <expression><![CDATA[$P{ciudad_colaborador}]]></expression>
+                </element>
+                <element kind="textField" uuid="da10725a-4465-4801-8f75-aac76d1565c2" x="70" y="30" width="400" height="20" hTextAlign="Left" vTextAlign="Middle">
+                    <expression><![CDATA[$P{direccion}]]></expression>
+                </element>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+
+            <!-- FRAME DE CERTIFICADO (CORREGIDO - AHORA INDEPENDIENTE) -->
+            <element kind="frame" uuid="55d8484d-8f27-4065-86b2-cfe21362255e" x="10" y="130" width="529" height="60">
+                <element kind="textField" uuid="3eaa672a-fd1f-43d3-8deb-b6b282351acd" x="10" y="15" width="510" height="31" fontName="Arial" hTextAlign="Justified" vTextAlign="Middle">
+                    <expression><![CDATA["Yo, "+$P{colaborador}+", certifico haber recibido el carnet de identificación como Servidor de CENTROSUR y a la vez me comprometo al buen uso del mismo."]]></expression>
+                </element>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+
+            <!-- FRAME DE TABLA DE FIRMA -->
+            <element kind="frame" uuid="580bfa78-1a5b-4a12-92f0-6b314b4f5c01" stretchType="ContainerHeight" mode="Transparent" x="10" y="190" width="529" height="140">
+                <!-- ENCABEZADOS DE TABLA -->
+                <element kind="staticText" uuid="586d0954-4649-4fc1-a57f-b91fbb6c174e" stretchType="ContainerHeight" x="9" y="9" width="61" height="21" forecolor="#2278FF" hTextAlign="Center" vTextAlign="Middle">
+                    <text><![CDATA[FECHA]]></text>
+                    <box>
+                        <pen lineWidth="0.5" lineColor="#030303"/>
+                    </box>
+                </element>
+                <element kind="staticText" uuid="c81f7f64-3553-4ff0-b423-81023c158822" stretchType="ContainerHeight" x="70" y="9" width="120" height="21" forecolor="#2278FF" hTextAlign="Center" vTextAlign="Middle">
+                    <text><![CDATA[APELLIDOS]]></text>
+                    <box>
+                        <pen lineWidth="0.5" lineColor="#030303"/>
+                    </box>
+                </element>
+                <element kind="staticText" uuid="1874d65c-b9cf-4a52-97f9-816c9f204ad0" stretchType="ContainerHeight" x="190" y="9" width="120" height="21" forecolor="#2278FF" hTextAlign="Center" vTextAlign="Middle">
+                    <text><![CDATA[NOMBRES]]></text>
+                    <box>
+                        <pen lineWidth="0.5" lineColor="#030303"/>
+                    </box>
+                </element>
+                <element kind="staticText" uuid="8a455735-5b99-4b37-bba9-51bd0e65fcef" stretchType="ContainerHeight" x="310" y="9" width="120" height="21" forecolor="#2278FF" hTextAlign="Center" vTextAlign="Middle">
+                    <text><![CDATA[CARGO]]></text>
+                    <box>
+                        <pen lineWidth="0.5" lineColor="#030303"/>
+                    </box>
+                </element>
+                <element kind="staticText" uuid="7bbbd9b4-2dc1-4939-8c49-d041ccf5ea0c" stretchType="ContainerHeight" x="430" y="9" width="90" height="21" forecolor="#2278FF" hTextAlign="Center" vTextAlign="Middle">
+                    <text><![CDATA[FIRMA]]></text>
+                    <box>
+                        <pen lineWidth="0.5" lineColor="#030303"/>
+                    </box>
+                </element>
+
+                <!-- DATOS DE TABLA -->
+                <element kind="textField" uuid="59ca6c5f-99b1-48a6-a2cd-d772f50f9217" stretchType="ContainerHeight" x="9" y="30" width="61" height="40" markup="html" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA[$P{fecha_entrega_documentos}]]></expression>
+                    <box>
+                        <pen lineWidth="0.5"/>
+                    </box>
+                </element>
+                <element kind="textField" uuid="62543e77-8a4f-4731-a486-04e7f4ca7d95" stretchType="ContainerHeight" x="70" y="30" width="120" height="40" markup="html" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA[$P{colaborador_apellidos}]]></expression>
+                    <box>
+                        <pen lineWidth="0.5"/>
+                    </box>
+                </element>
+                <element kind="textField" uuid="95a9cb43-f156-42d5-b5b6-cf65d10539cb" stretchType="ContainerHeight" x="190" y="30" width="120" height="40" markup="html" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA[$P{colaborador_nombres}]]></expression>
+                    <box>
+                        <pen lineWidth="0.5"/>
+                    </box>
+                </element>
+                <element kind="textField" uuid="be11aab6-fe18-4b38-9eeb-032cef8921c5" stretchType="ContainerHeight" x="310" y="30" width="120" height="40" markup="html" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA[$P{cargo}]]></expression>
+                    <box>
+                        <pen lineWidth="0.5"/>
+                    </box>
+                </element>
+                <element kind="frame" uuid="54894f42-1e1f-4d73-97d3-f246c7a04e37" stretchType="ContainerHeight" x="430" y="30" width="90" height="40">
+                    <box>
+                        <pen lineWidth="0.5"/>
+                    </box>
+                </element>
+
+                <!-- RESPONSABLE Y FECHA -->
+                <element kind="textField" uuid="9161ac57-a496-465c-916f-d2c5885d894e" stretchType="ContainerHeight" x="110" y="80" width="320" height="20" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA["Responsable de entrega DTH: "+$P{responsable_DTH}]]></expression>
+                </element>
+                <element kind="textField" uuid="385234d4-7142-4f9e-adb3-95e962ded36c" stretchType="ContainerHeight" x="110" y="100" width="320" height="20" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+                    <expression><![CDATA["Fecha: "+$P{fecha_entrega_documentos}]]></expression>
+                </element>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+        </band>
     </detail>
-    <columnFooter height="45" splitType="Stretch"/>
-    <pageFooter height="54" splitType="Stretch"/>
-    <summary height="42" splitType="Stretch"/>
 </jasperReport>
