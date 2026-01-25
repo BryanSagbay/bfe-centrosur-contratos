@@ -127,6 +127,7 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
+
             <element kind="frame" uuid="f00bb024-2b04-4f82-8c77-328437d7e651" mode="Opaque" x="10" y="246" width="60" height="29" backcolor="#FFFFFF">
                 <element kind="staticText" uuid="fc66e054-5eed-48fe-8964-5f0cf334a5d1" x="0" y="0" width="60" height="29" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
                     <text><![CDATA[9H50 a 10H20]]></text>
