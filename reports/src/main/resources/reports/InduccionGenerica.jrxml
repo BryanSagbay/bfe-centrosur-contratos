@@ -43,117 +43,117 @@
         </element>
     </title>
     <detail>
-        <band height="658" splitType="Stretch">
-            <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="2" width="550" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+        <band height="683" splitType="Stretch">
+            <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="9" width="550" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Datos del Trabajador]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="ac00e420-7048-41bf-a6ce-5242c9c23bc3" mode="Opaque" x="10" y="12" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="ac00e420-7048-41bf-a6ce-5242c9c23bc3" mode="Opaque" x="10" y="19" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Cargo:]]></text>
                 <property name="com.jaspersoft.studio.unit.y" value="pixel"/>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="050f4dbf-7b5f-44e4-9bbf-5d527dbc74a1" mode="Opaque" x="10" y="22" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="050f4dbf-7b5f-44e4-9bbf-5d527dbc74a1" mode="Opaque" x="10" y="29" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Trabajador:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="a3aeaeac-3775-44c7-943e-fa548d2746db" mode="Opaque" x="10" y="32" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="a3aeaeac-3775-44c7-943e-fa548d2746db" mode="Opaque" x="10" y="39" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Dirección:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="edd80800-8574-4c7d-bb92-3a642d892570" mode="Opaque" x="10" y="42" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="edd80800-8574-4c7d-bb92-3a642d892570" mode="Opaque" x="10" y="49" width="105" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Fecha de Ingreso:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="9dc85da9-e403-4229-b735-64fd08f810b8" x="115" y="12" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
+            <element kind="textField" uuid="9dc85da9-e403-4229-b735-64fd08f810b8" x="115" y="19" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{cargo}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="e8b130ad-9294-4b29-8781-0796cd3ad2c4" x="115" y="22" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
+            <element kind="textField" uuid="e8b130ad-9294-4b29-8781-0796cd3ad2c4" x="115" y="29" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{colaborador}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="0d58c5da-fc69-4480-9fd3-8f93f3a2331e" x="115" y="32" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
+            <element kind="textField" uuid="0d58c5da-fc69-4480-9fd3-8f93f3a2331e" x="115" y="39" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{direccion}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="5d5522eb-76e0-4694-b7f4-80207010f121" x="115" y="42" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
+            <element kind="textField" uuid="5d5522eb-76e0-4694-b7f4-80207010f121" x="115" y="49" width="445" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{fecha_entrega_documentos}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="a6e93501-37c5-4afe-9de0-324bb4a2d4cd" mode="Opaque" x="10" y="55" width="70" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="a6e93501-37c5-4afe-9de0-324bb4a2d4cd" mode="Opaque" x="10" y="66" width="70" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[OBJETIVO:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="aabf8423-1f9e-4816-b48f-255de3ee4022" x="80" y="55" width="480" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
+            <element kind="staticText" uuid="aabf8423-1f9e-4816-b48f-255de3ee4022" x="80" y="66" width="480" height="10" fontName="Arial" fontSize="7.0" vTextAlign="Middle">
                 <text><![CDATA[  Brindar toda la información necesaria de la Empresa que se considera relevante para el conocimiento del nuevo trabajador. ]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="97756358-3657-48f7-9274-b2cac6a85ba8" mode="Opaque" x="10" y="68" width="60" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="97756358-3657-48f7-9274-b2cac6a85ba8" mode="Opaque" x="10" y="84" width="60" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Hora]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="da4f1467-4d1f-4baf-8d73-485fb8b87835" mode="Opaque" x="70" y="68" width="90" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="da4f1467-4d1f-4baf-8d73-485fb8b87835" mode="Opaque" x="70" y="84" width="90" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Área]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="47cf3c49-c4e1-47fe-bd4d-6d63c39e098f" mode="Opaque" x="160" y="68" width="210" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="47cf3c49-c4e1-47fe-bd4d-6d63c39e098f" mode="Opaque" x="160" y="84" width="210" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Tema a Tratar]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="416cc2d4-ed94-4b37-b7c0-44eb8dba7483" mode="Opaque" x="370" y="68" width="120" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="416cc2d4-ed94-4b37-b7c0-44eb8dba7483" mode="Opaque" x="370" y="84" width="120" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Responsable]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="858c254e-7c82-423a-9956-4bf75408b4e8" mode="Opaque" x="490" y="68" width="70" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="858c254e-7c82-423a-9956-4bf75408b4e8" mode="Opaque" x="490" y="84" width="70" height="10" backcolor="#BFE1FF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Firma]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="02316c99-76f4-4604-a73e-8857fc3e1bf5" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="78" width="60" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="02316c99-76f4-4604-a73e-8857fc3e1bf5" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="94" width="60" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[8h00 a 8h20]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="e345be84-5a12-4360-ad9c-f51dd19c60c4" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="78" width="90" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="e345be84-5a12-4360-ad9c-f51dd19c60c4" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="94" width="90" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[SELECCIÓN]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="24761a7f-e5d5-4a39-8cfc-2defc4e0ef78" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="78" width="210" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="24761a7f-e5d5-4a39-8cfc-2defc4e0ef78" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="94" width="210" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Régimen Laboral  y tiempo de Contratación.
  - Dirección a la que pertenece y en que área va trabajar
  - Entrega de Perfil de Cargo
@@ -162,62 +162,62 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="74c64f6e-2802-4828-b181-a04895ec8808" positionType="Float" x="370" y="78" width="120" height="37" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="74c64f6e-2802-4828-b181-a04895ec8808" positionType="Float" x="370" y="94" width="120" height="37" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{analista_th}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="24bb8486-b1b2-4a28-8925-7d85f6bdf8f9" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="78" width="70" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="24bb8486-b1b2-4a28-8925-7d85f6bdf8f9" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="94" width="70" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="790f39af-f8d8-429e-8846-a4b0b36c9d31" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="115" width="60" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="790f39af-f8d8-429e-8846-a4b0b36c9d31" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="131" width="60" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[8H20 a 8H50]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="bd5eeab9-8a7b-4724-bc4d-a078ecd72133" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="115" width="90" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="bd5eeab9-8a7b-4724-bc4d-a078ecd72133" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="131" width="90" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[TRABAJO SOCIAL]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="b10f42b7-ca26-4d18-b18e-3cad215facdb" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="115" width="210" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="b10f42b7-ca26-4d18-b18e-3cad215facdb" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="131" width="210" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Beneficios
  - Permisos médicos y calamidades domésticas]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="2ab21e9e-3a48-42df-b74d-4c361d5883a9" positionType="Float" x="370" y="115" width="120" height="20" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="2ab21e9e-3a48-42df-b74d-4c361d5883a9" positionType="Float" x="370" y="131" width="120" height="20" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{trabajadora_social}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="2bdcd50b-be1e-4162-895e-88c80a95b0d8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="115" width="70" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="2bdcd50b-be1e-4162-895e-88c80a95b0d8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="131" width="70" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="8630ffc9-cfb7-4ba6-9a2d-0d66f805dead" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="135" width="60" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="8630ffc9-cfb7-4ba6-9a2d-0d66f805dead" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="151" width="60" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[8H50 a 9H50]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="2b979c69-2b9d-449a-bea3-43a898507b8a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="135" width="90" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="2b979c69-2b9d-449a-bea3-43a898507b8a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="151" width="90" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[REMUNERACIONES]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="3e0342a7-f1cb-476e-9644-9e343d5545e6" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="135" width="210" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="3e0342a7-f1cb-476e-9644-9e343d5545e6" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="151" width="210" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[ - Fecha de pago del sueldo
  - Horario de almuerzo
  - Vacaciones
@@ -229,62 +229,62 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="279827ee-4cb5-450c-98b4-1a1ec59f90db" positionType="Float" x="370" y="135" width="120" height="57" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="279827ee-4cb5-450c-98b4-1a1ec59f90db" positionType="Float" x="370" y="151" width="120" height="57" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{remuneraciones}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="4477b160-8ea3-4d86-aa60-d5f017bb130e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="135" width="70" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="4477b160-8ea3-4d86-aa60-d5f017bb130e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="151" width="70" height="57" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="439b3194-78b4-4f14-a91c-6cfdfaffbc32" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="192" width="60" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="439b3194-78b4-4f14-a91c-6cfdfaffbc32" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="208" width="60" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[9H50 a 10H20]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="0033fc30-4dcf-4894-83f9-9b0cf228cbd8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="192" width="90" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="0033fc30-4dcf-4894-83f9-9b0cf228cbd8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="208" width="90" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[SEGUROS]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="f50220de-9089-40d1-b8b2-de19e3ea5bfe" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="192" width="210" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="f50220de-9089-40d1-b8b2-de19e3ea5bfe" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="208" width="210" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Póliza de Vida, coberturas, exclusiones, reclamos y ㅤdocumentos básicos.
  - Seguro de Salud, coberturas, exclusiones, reclamos.]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="7d6ce726-d30c-4b17-ab22-314763d630c4" positionType="Float" x="370" y="192" width="120" height="28" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="7d6ce726-d30c-4b17-ab22-314763d630c4" positionType="Float" x="370" y="208" width="120" height="28" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{seguros}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="5fe531d4-da48-4ad8-a6d6-79135666c1fc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="192" width="70" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="5fe531d4-da48-4ad8-a6d6-79135666c1fc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="208" width="70" height="28" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="8b2c8551-1056-45a9-b7b1-0b0c8048314c" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="220" width="60" height="159" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="8b2c8551-1056-45a9-b7b1-0b0c8048314c" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="236" width="60" height="159" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[10H20 a 11H20]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="765cb4a0-d964-4457-b0de-9faeb4f0dfc7" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="220" width="90" height="181" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="765cb4a0-d964-4457-b0de-9faeb4f0dfc7" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="236" width="90" height="181" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[SEGURIDAD EN EL TRABAJO]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="666c4380-c411-4a7f-b109-6e7999f1c535" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="220" width="210" height="160" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="666c4380-c411-4a7f-b109-6e7999f1c535" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="236" width="210" height="160" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Objetivo de la Seguridad y Salud en el Trabajo.
  - Política de Seguridad y Salud en el Trabajo.
  - Sistema de Gestión de
@@ -304,110 +304,110 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="752ff0d7-5870-4107-a2da-3bb53a88c2e1" positionType="Float" x="370" y="220" width="120" height="160" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="752ff0d7-5870-4107-a2da-3bb53a88c2e1" positionType="Float" x="370" y="236" width="120" height="160" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{seguridad}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="de0d979b-1210-40e3-ad2d-9867e17f1c5b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="220" width="70" height="160" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="de0d979b-1210-40e3-ad2d-9867e17f1c5b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="236" width="70" height="160" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="9628fd95-fab3-4b72-a1c9-7a5f7fb3cb8f" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="380" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="9628fd95-fab3-4b72-a1c9-7a5f7fb3cb8f" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="396" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Riesgo Eléctrico (aplica únicamente para cargos técnicos)]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="b65dde71-6848-476b-9e55-af7d857ef005" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="379" width="60" height="22" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="b65dde71-6848-476b-9e55-af7d857ef005" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="395" width="60" height="22" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[11H20 a 12H10]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="d1b1b220-8d1e-483b-9c83-9ad61b5c21d2" positionType="Float" x="370" y="380" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="d1b1b220-8d1e-483b-9c83-9ad61b5c21d2" positionType="Float" x="370" y="396" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{riesgo}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="ea44862c-70f9-4c83-b197-5873f8aa254a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="380" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="ea44862c-70f9-4c83-b197-5873f8aa254a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="396" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="e12b2d8e-4d0f-4634-8241-4ce99b77bad0" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="401" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="e12b2d8e-4d0f-4634-8241-4ce99b77bad0" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="417" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[12H10 a 12H40]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="00e005bb-eda0-465d-809f-d708c8f32e8b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="401" width="90" height="42" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="00e005bb-eda0-465d-809f-d708c8f32e8b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="417" width="90" height="42" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[DEPARTAMENTO DE CALIDAD]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="c841087d-cb20-4c2d-b756-408c19168786" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="401" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="c841087d-cb20-4c2d-b756-408c19168786" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="417" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Sistema de Evaluación de Desempeño (ESOL)]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="b21480e8-a6fe-4c2e-8ba7-002034ab0348" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="422" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="b21480e8-a6fe-4c2e-8ba7-002034ab0348" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="438" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Manual de Procesos y procedimientos (Lotus Notes)
  - Entrega del plan estratégico]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="4961c494-1ca9-45f4-a418-0f2a2086877d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="422" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="4961c494-1ca9-45f4-a418-0f2a2086877d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="438" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[12H40 a 13H10]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="4a3b3880-4549-4f8d-94d5-7dce5f1bc499" positionType="Float" x="370" y="401" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="4a3b3880-4549-4f8d-94d5-7dce5f1bc499" positionType="Float" x="370" y="417" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{coordinador_calidad}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="ef506aef-f3e9-4a1b-81b7-ef79678f6f13" positionType="Float" x="370" y="422" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="ef506aef-f3e9-4a1b-81b7-ef79678f6f13" positionType="Float" x="370" y="438" width="120" height="21" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{ingeniero_calidad}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="25a612a3-4bd3-48d1-b953-6a549a8136ce" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="401" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="25a612a3-4bd3-48d1-b953-6a549a8136ce" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="417" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="373a967b-a923-4e58-ac37-c73cec8a5669" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="422" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="373a967b-a923-4e58-ac37-c73cec8a5669" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="438" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="552320e2-4e48-428c-ae33-7f7c7cfcb2ee" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="443" width="60" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="552320e2-4e48-428c-ae33-7f7c7cfcb2ee" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="459" width="60" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[13H10 a 14H10]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="8e30ab44-f780-42ba-803e-eb3b29162dfc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="443" width="90" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="8e30ab44-f780-42ba-803e-eb3b29162dfc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="459" width="90" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[DEPARTAMENTO MÉDICO]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="2ac6dc5f-09ec-4d5c-9d79-d41518e8ea37" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="443" width="210" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="2ac6dc5f-09ec-4d5c-9d79-d41518e8ea37" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="459" width="210" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Vigilancia de la Salud
  - Manipulación de Cargas
  - Ergonomía en la Oficina
@@ -418,31 +418,31 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="a7a9c484-fea2-4bcf-acbb-1ba8c7a8d109" positionType="Float" x="370" y="443" width="120" height="54" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="a7a9c484-fea2-4bcf-acbb-1ba8c7a8d109" positionType="Float" x="370" y="459" width="120" height="54" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{departamento_medico}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="b4884549-0576-4778-9214-118407aa0d0e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="443" width="70" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="b4884549-0576-4778-9214-118407aa0d0e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="459" width="70" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="2f17c7ce-cb9a-468b-8a21-1549eb5c9d04" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="497" width="60" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="2f17c7ce-cb9a-468b-8a21-1549eb5c9d04" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="513" width="60" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[14H30 a 15H30]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="75ad42fc-a37d-476a-83c2-2ed39597bb9d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="497" width="90" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="75ad42fc-a37d-476a-83c2-2ed39597bb9d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="513" width="90" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[DIRECCIÓN DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="e2ea76d1-91e5-473d-adac-b5341280bc79" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="497" width="210" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="e2ea76d1-91e5-473d-adac-b5341280bc79" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="513" width="210" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Gestión documental (quipux), Lotus Notes.
  - GLPI Sistema de Incidentes
  - Mesa de ayuda de tecnología (ext. 5050)
@@ -451,31 +451,31 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="ebe55da5-1e43-470f-bc33-b6a1f3e8e577" positionType="Float" x="370" y="497" width="120" height="35" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="ebe55da5-1e43-470f-bc33-b6a1f3e8e577" positionType="Float" x="370" y="513" width="120" height="35" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{tecnologia}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="90da9576-b568-4df2-9adc-c0d3c338098a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="497" width="70" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="90da9576-b568-4df2-9adc-c0d3c338098a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="513" width="70" height="35" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="8c30f946-cf78-48fa-a3f4-cc0b682113ff" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="532" width="60" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="8c30f946-cf78-48fa-a3f4-cc0b682113ff" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="548" width="60" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[15H30 a 16H30]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="cdb12c44-e30f-42bb-b1a2-921248ce5634" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="532" width="90" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="staticText" uuid="cdb12c44-e30f-42bb-b1a2-921248ce5634" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="548" width="90" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[DIRECCIÓN DE DISTRIBUCIÒN]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="2aa1ad14-f285-4d95-9bff-78dab36ba9fd" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="532" width="210" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="2aa1ad14-f285-4d95-9bff-78dab36ba9fd" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="548" width="210" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[ - Mantenimiento correctivo (Reparaciones) en redes de ㅤDistribución
  - Realización de consignaciones internas tendientes a ejecutar  ㅤlabores de expansión, mantenimiento preventivo y correctivo ㅤmayor en el Sistema de Distribución.
  - Entrega de instructivos: I-DIDIS-104.1 e I-DIDIS-622.0]]></text>
@@ -483,19 +483,19 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="a9496ea6-3125-46b5-a59d-4f9b48b93d2c" positionType="Float" x="370" y="532" width="120" height="54" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
+            <element kind="textField" uuid="a9496ea6-3125-46b5-a59d-4f9b48b93d2c" positionType="Float" x="370" y="548" width="120" height="54" fontName="Arial" fontSize="7.0" hTextAlign="Center" vTextAlign="Middle">
                 <expression><![CDATA[$P{distribucion}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="1a2e98c8-46a5-463c-b759-0ed8716c26ea" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="532" width="70" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
+            <element kind="staticText" uuid="1a2e98c8-46a5-463c-b759-0ed8716c26ea" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="548" width="70" height="54" backcolor="#FFFFFF" fontName="Arial" fontSize="7.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="frame" uuid="b128f48c-387a-4bea-89bd-11315949ca67" positionType="Float" stretchType="ContainerHeight" x="10" y="591" width="550" height="63">
+            <element kind="frame" uuid="b128f48c-387a-4bea-89bd-11315949ca67" positionType="Float" stretchType="ContainerHeight" x="10" y="611" width="550" height="63">
                 <element kind="textField" uuid="b126aed6-fda8-4b07-b44a-2af8f82475b1" positionType="Float" stretchType="ContainerHeight" x="9" y="3" width="531" height="20" fontName="Arial" fontSize="7.0" hTextAlign="Justified" vTextAlign="Middle">
                     <expression><![CDATA["Certifico que he concluído satisfactoriamente todo el proceso de inducción genérica.  Dicho proceso se ha realizado en la ciudad de"+ $P{ciudad_colaborador} +", el "+ $P{dia}+ " de " + $P{mes} +" de "+ $P{anio} +"."]]></expression>
                 </element>
