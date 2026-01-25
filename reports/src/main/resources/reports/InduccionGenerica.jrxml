@@ -23,7 +23,7 @@
     <parameter name="distribucion" class="java.lang.String"/>
     <query language="sql"><![CDATA[]]></query>
     <background splitType="Stretch"/>
-    <title height="59" splitType="Stretch">
+    <title height="56" splitType="Stretch">
         <element kind="image" uuid="1d1c3063-016d-4ee1-b4a4-9f346cff6406" x="10" y="5" width="120" height="50" hImageAlign="Center" vImageAlign="Middle">
             <expression><![CDATA["https://portalcs.centrosur.gob.ec/assets/imagenes/portalcs-bg.png"]]></expression>
             <box>
@@ -44,57 +44,69 @@
         </element>
     </title>
     <detail>
-        <band height="125" splitType="Stretch">
-            <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="3" width="550" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
+        <band height="210" splitType="Stretch">
+            <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="2" width="550" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Datos del Trabajador]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="ac00e420-7048-41bf-a6ce-5242c9c23bc3" mode="Opaque" x="10" y="18" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="ac00e420-7048-41bf-a6ce-5242c9c23bc3" mode="Opaque" x="10" y="17" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Cargo:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="050f4dbf-7b5f-44e4-9bbf-5d527dbc74a1" mode="Opaque" x="10" y="33" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="050f4dbf-7b5f-44e4-9bbf-5d527dbc74a1" mode="Opaque" x="10" y="32" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Trabajador:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="a3aeaeac-3775-44c7-943e-fa548d2746db" mode="Opaque" x="10" y="48" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="a3aeaeac-3775-44c7-943e-fa548d2746db" mode="Opaque" x="10" y="47" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Dirección:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="staticText" uuid="edd80800-8574-4c7d-bb92-3a642d892570" mode="Opaque" x="10" y="63" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
+            <element kind="staticText" uuid="edd80800-8574-4c7d-bb92-3a642d892570" mode="Opaque" x="10" y="62" width="105" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Left" vTextAlign="Middle">
                 <text><![CDATA[  Fecha de Ingreso:]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="9dc85da9-e403-4229-b735-64fd08f810b8" x="115" y="18" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
+            <element kind="textField" uuid="9dc85da9-e403-4229-b735-64fd08f810b8" x="115" y="17" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{cargo}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="e8b130ad-9294-4b29-8781-0796cd3ad2c4" x="115" y="33" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
+            <element kind="textField" uuid="e8b130ad-9294-4b29-8781-0796cd3ad2c4" x="115" y="32" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{colaborador}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="0d58c5da-fc69-4480-9fd3-8f93f3a2331e" x="115" y="48" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
+            <element kind="textField" uuid="0d58c5da-fc69-4480-9fd3-8f93f3a2331e" x="115" y="47" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{direccion}]]></expression>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
-            <element kind="textField" uuid="5d5522eb-76e0-4694-b7f4-80207010f121" x="115" y="63" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
+            <element kind="textField" uuid="5d5522eb-76e0-4694-b7f4-80207010f121" x="115" y="62" width="445" height="15" fontName="Arial" fontSize="9.0" vTextAlign="Middle">
                 <expression><![CDATA["  "+$P{fecha_entrega_documentos}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="a6e93501-37c5-4afe-9de0-324bb4a2d4cd" mode="Opaque" x="10" y="80" width="70" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[OBJETIVO:]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="aabf8423-1f9e-4816-b48f-255de3ee4022" x="80" y="80" width="480" height="15" fontName="Arial" fontSize="8.0" vTextAlign="Middle">
+                <text><![CDATA[  Brindar toda la información necesaria de la Empresa que se considera relevante para el conocimiento del nuevo trabajador. ]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
