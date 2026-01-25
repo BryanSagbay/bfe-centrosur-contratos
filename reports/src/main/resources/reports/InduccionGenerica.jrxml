@@ -43,7 +43,7 @@
         </element>
     </title>
     <detail>
-        <band height="655" splitType="Stretch">
+        <band height="692" splitType="Stretch">
             <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="2" width="550" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Datos del Trabajador]]></text>
                 <box>
@@ -387,6 +387,106 @@
                 </box>
             </element>
             <element kind="staticText" uuid="373a967b-a923-4e58-ac37-c73cec8a5669" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="490" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="552320e2-4e48-428c-ae33-7f7c7cfcb2ee" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="511" width="60" height="58" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[13H10 a 14H10]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="8e30ab44-f780-42ba-803e-eb3b29162dfc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="511" width="90" height="58" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[DEPARTAMENTO MÉDICO]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2ac6dc5f-09ec-4d5c-9d79-d41518e8ea37" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="511" width="210" height="58" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Vigilancia de la Salud
+ - Manipulación de Cargas
+ - Ergonomía en la Oficina
+ - Ejercicios de Calentamiento y estiramiento
+ - Posturas forzadas y sobreesfuerzo
+ - Pausas Activas]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="a7a9c484-fea2-4bcf-acbb-1ba8c7a8d109" positionType="Float" x="370" y="511" width="120" height="58" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{departamento_medico}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="b4884549-0576-4778-9214-118407aa0d0e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="511" width="70" height="58" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2f17c7ce-cb9a-468b-8a21-1549eb5c9d04" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="569" width="60" height="41" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[14H30 a 15H30]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="75ad42fc-a37d-476a-83c2-2ed39597bb9d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="569" width="90" height="41" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[DIRECCIÓN DE TECNOLOGÍA DE LA INFORMACIÓN Y COMUNICACIÓN]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="e2ea76d1-91e5-473d-adac-b5341280bc79" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="569" width="210" height="41" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Gestión documental (quipux), Lotus Notes.
+ - GLPI Sistema de Incidentes
+ - Mesa de ayuda de tecnología (ext. 5050)
+ - Seguridad de la Información]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="ebe55da5-1e43-470f-bc33-b6a1f3e8e577" positionType="Float" x="370" y="569" width="120" height="41" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{tecnologia}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="90da9576-b568-4df2-9adc-c0d3c338098a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="569" width="70" height="41" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="8c30f946-cf78-48fa-a3f4-cc0b682113ff" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="610" width="60" height="69" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[15H30 a 16H30]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="cdb12c44-e30f-42bb-b1a2-921248ce5634" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="610" width="90" height="69" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[DIRECCIÓN DE DISTRIBUCIÒN]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2aa1ad14-f285-4d95-9bff-78dab36ba9fd" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="610" width="210" height="69" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Mantenimiento correctivo (Reparaciones) en redes de ㅤDistribución
+ - Realización de consignaciones internas tendientes a ㅤejecutar labores de expansión, mantenimiento ㅤpreventivo y correctivo mayor en el Sistema de ㅤDistribución.
+ - Entrega de instructivos: I-DIDIS-104.1 e I-DIDIS-622.0]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="a9496ea6-3125-46b5-a59d-4f9b48b93d2c" positionType="Float" x="370" y="610" width="120" height="69" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{distribucion}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="1a2e98c8-46a5-463c-b759-0ed8716c26ea" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="610" width="70" height="69" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
                 <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
