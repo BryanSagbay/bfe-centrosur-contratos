@@ -22,7 +22,6 @@
     <parameter name="tecnologia" class="java.lang.String"/>
     <parameter name="distribucion" class="java.lang.String"/>
     <query language="sql"><![CDATA[]]></query>
-    <background splitType="Stretch"/>
     <title height="56" splitType="Stretch">
         <element kind="image" uuid="1d1c3063-016d-4ee1-b4a4-9f346cff6406" x="10" y="5" width="120" height="50" hImageAlign="Center" vImageAlign="Middle">
             <expression><![CDATA["https://portalcs.centrosur.gob.ec/assets/imagenes/portalcs-bg.png"]]></expression>
@@ -44,7 +43,7 @@
         </element>
     </title>
     <detail>
-        <band height="210" splitType="Stretch">
+        <band height="655" splitType="Stretch">
             <element kind="staticText" uuid="71df404f-e46b-4de4-8579-e3c7328fdd04" mode="Opaque" x="10" y="2" width="550" height="15" backcolor="#BFE1FF" fontName="Arial" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Datos del Trabajador]]></text>
                 <box>
@@ -137,6 +136,258 @@
             </element>
             <element kind="staticText" uuid="858c254e-7c82-423a-9956-4bf75408b4e8" mode="Opaque" x="490" y="98" width="70" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
                 <text><![CDATA[Firma]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="02316c99-76f4-4604-a73e-8857fc3e1bf5" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="113" width="60" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[8h00 a 8h20]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="e345be84-5a12-4360-ad9c-f51dd19c60c4" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="113" width="90" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[SELECCIÓN]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="24761a7f-e5d5-4a39-8cfc-2defc4e0ef78" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="113" width="210" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Régimen Laboral  y tiempo de Contratación.
+ - Dirección a la que pertenece y en que área va trabajar
+ - Entrega de Perfil de Cargo
+ - Entrega de Reglamentos ]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="74c64f6e-2802-4828-b181-a04895ec8808" positionType="Float" x="370" y="113" width="120" height="37" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{analista_th}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="24bb8486-b1b2-4a28-8925-7d85f6bdf8f9" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="113" width="70" height="37" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="790f39af-f8d8-429e-8846-a4b0b36c9d31" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="150" width="60" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[8H20 a 8H50]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="bd5eeab9-8a7b-4724-bc4d-a078ecd72133" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="150" width="90" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[TRABAJO SOCIAL]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="b10f42b7-ca26-4d18-b18e-3cad215facdb" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="150" width="210" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Beneficios
+ - Permisos médicos y calamidades domésticas]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="2ab21e9e-3a48-42df-b74d-4c361d5883a9" positionType="Float" x="370" y="150" width="120" height="20" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{trabajadora_social}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2bdcd50b-be1e-4162-895e-88c80a95b0d8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="150" width="70" height="20" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="8630ffc9-cfb7-4ba6-9a2d-0d66f805dead" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="170" width="60" height="68" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[8H50 a 9H50]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="2b979c69-2b9d-449a-bea3-43a898507b8a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="170" width="90" height="68" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[REMUNERACIONES]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="3e0342a7-f1cb-476e-9644-9e343d5545e6" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="170" width="210" height="68" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Fecha de pago del sueldo
+ - Horario de almuerzo
+ - Vacaciones
+ - Marcaciones
+ - Registro de Sobretiempos
+ - Registro de Subsistencias
+ - Justificaciones: inconsistencias]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="279827ee-4cb5-450c-98b4-1a1ec59f90db" positionType="Float" x="370" y="170" width="120" height="68" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{remuneraciones}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="4477b160-8ea3-4d86-aa60-d5f017bb130e" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="170" width="70" height="68" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="439b3194-78b4-4f14-a91c-6cfdfaffbc32" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="238" width="60" height="32" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[9H50 a 10H20]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="0033fc30-4dcf-4894-83f9-9b0cf228cbd8" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="238" width="90" height="32" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[SEGUROS]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="f50220de-9089-40d1-b8b2-de19e3ea5bfe" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="238" width="210" height="32" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Póliza de Vida, coberturas, exclusiones, reclamos y ㅤdocumentos básicos.
+ - Seguro de Salud, coberturas, exclusiones, reclamos.]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="7d6ce726-d30c-4b17-ab22-314763d630c4" positionType="Float" x="370" y="238" width="120" height="32" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{seguros}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="5fe531d4-da48-4ad8-a6d6-79135666c1fc" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="238" width="70" height="32" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="8b2c8551-1056-45a9-b7b1-0b0c8048314c" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="270" width="60" height="178" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[10H20 a 11H20]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="765cb4a0-d964-4457-b0de-9faeb4f0dfc7" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="270" width="90" height="199" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[SEGURIDAD EN EL TRABAJO]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="666c4380-c411-4a7f-b109-6e7999f1c535" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="270" width="210" height="178" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Objetivo de la Seguridad y Salud en el Trabajo.
+ - Política de Seguridad y Salud en el Trabajo.
+ - Sistema de Gestión de -Seguridad y Salud en el ㅤTrabajo.
+ - Accidente e incidente de -Trabajo, aviso y notificación ㅤde los mismos.
+ - Enfermedad Ocupacional o Profesional.
+ - Investigación de Accidentes o Incidentes de Trabajo.
+ - Uso y mantenimiento de ropa de protección y equipo ㅤde protección personal.
+ - Actuación en casos de emergencias.
+ - Matriz de Identificación de Riesgos por puesto de ㅤtrabajo: riesgos físicos, mecánicos, ㅤquímicos, ㅤbiológicos, ergonómicos y psicosociales.
+ - Ergonomía, Pausas Activas
+ - Clases de fuego y tipos de extintores
+ - Reglamento de Seguridad y Salud en el Trabajo de la ㅤEmpresa Eléctrica Regional Centro Sur C.A.
+ - Entrega de EPP's al nuevo personal.]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="752ff0d7-5870-4107-a2da-3bb53a88c2e1" positionType="Float" x="370" y="270" width="120" height="178" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{seguridad}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="de0d979b-1210-40e3-ad2d-9867e17f1c5b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="270" width="70" height="178" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="9628fd95-fab3-4b72-a1c9-7a5f7fb3cb8f" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="448" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Riesgo Eléctrico (aplica únicamente para cargos ㅤ ㅤtécnicos)]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="b65dde71-6848-476b-9e55-af7d857ef005" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="448" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[11H20 a 12H10]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="d1b1b220-8d1e-483b-9c83-9ad61b5c21d2" positionType="Float" x="370" y="448" width="120" height="21" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{riesgo}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="ea44862c-70f9-4c83-b197-5873f8aa254a" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="448" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="e12b2d8e-4d0f-4634-8241-4ce99b77bad0" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="469" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[12H10 a 12H40]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="00e005bb-eda0-465d-809f-d708c8f32e8b" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="70" y="469" width="90" height="42" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[DEPARTAMENTO DE CALIDAD]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="c841087d-cb20-4c2d-b756-408c19168786" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="469" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Sistema de Evaluación de Desempeño (ESOL)]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="b21480e8-a6fe-4c2e-8ba7-002034ab0348" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="160" y="490" width="210" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+                <text><![CDATA[ - Manual de Procesos y procedimientos (Lotus Notes)
+ - Entrega del plan estratégico]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="4961c494-1ca9-45f4-a418-0f2a2086877d" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="10" y="490" width="60" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[12H40 a 13H10]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="4a3b3880-4549-4f8d-94d5-7dce5f1bc499" positionType="Float" x="370" y="469" width="120" height="21" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{coordinador_calidad}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="ef506aef-f3e9-4a1b-81b7-ef79678f6f13" positionType="Float" x="370" y="490" width="120" height="21" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$P{ingeniero_calidad}]]></expression>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="25a612a3-4bd3-48d1-b953-6a549a8136ce" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="469" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="373a967b-a923-4e58-ac37-c73cec8a5669" positionType="Float" stretchType="ContainerHeight" mode="Transparent" x="490" y="490" width="70" height="21" backcolor="#FFFFFF" fontName="Arial" fontSize="8.0" hTextAlign="Left" vTextAlign="Top">
+                <text><![CDATA[]]></text>
                 <box>
                     <pen lineWidth="0.5"/>
                 </box>
