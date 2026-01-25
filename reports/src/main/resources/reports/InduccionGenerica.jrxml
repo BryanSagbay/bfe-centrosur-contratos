@@ -111,6 +111,36 @@
                     <pen lineWidth="0.5"/>
                 </box>
             </element>
+            <element kind="staticText" uuid="97756358-3657-48f7-9274-b2cac6a85ba8" mode="Opaque" x="10" y="98" width="60" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Hora]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="da4f1467-4d1f-4baf-8d73-485fb8b87835" mode="Opaque" x="70" y="98" width="90" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Área]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="47cf3c49-c4e1-47fe-bd4d-6d63c39e098f" mode="Opaque" x="160" y="98" width="210" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Tema a Tratar]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="416cc2d4-ed94-4b37-b7c0-44eb8dba7483" mode="Opaque" x="370" y="98" width="120" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Responsable]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="staticText" uuid="858c254e-7c82-423a-9956-4bf75408b4e8" mode="Opaque" x="490" y="98" width="70" height="15" backcolor="#BFE1FF" fontName="Arial" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <text><![CDATA[Firma]]></text>
+                <box>
+                    <pen lineWidth="0.5"/>
+                </box>
+            </element>
         </band>
     </detail>
 </jasperReport>
