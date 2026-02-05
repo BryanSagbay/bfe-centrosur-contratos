@@ -1,0 +1,12 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="ActaEntregaCargo" language="java" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8b4c2e86-ce69-454c-955c-03cb5409dc99">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <parameter name="ciudad_colaborador" class="java.lang.String"/>
+    <parameter name="direccion" class="java.lang.String"/>
+    <parameter name="colaborador_nombres" class="java.lang.String"/>
+    <parameter name="colaborador_apellidos" class="java.lang.String"/>
+    <parameter name="cargo" class="java.lang.String"/>
+    <parameter name="fecha_entrega_documentos" class="java.lang.String"/>
+    <parameter name="responsable_DTH" class="java.lang.String"/>
+   
+</jasperReport>
