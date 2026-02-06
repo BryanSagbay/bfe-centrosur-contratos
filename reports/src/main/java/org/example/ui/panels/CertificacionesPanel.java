@@ -175,15 +175,15 @@ public class CertificacionesPanel extends JPanel {
         checkBoxCertificaciones = new LinkedHashMap<>();
 
         String[] certificaciones = {
-                "Certificado Laboral General",
-                "Certificado con Salario",
-                "Certificado para Trámites Bancarios"
+                "LISTA DE VERIFICACIÓN DEL PROCESO",
+                "ACUERDO DE CUMPLIMIENTO PARA PERSONAS",
+                "SOLICITUD PARA LA CERTIFICACIÓN DE PERSONAS"
         };
 
         String[] archivos = {
-                "CertificadoLaboralGeneral.jrxml",
-                "CertificadoConSalario.jrxml",
-                "CertificadoBancario.jrxml"
+                "C01ListaVerificacionProceso.jrxml",
+                "C02SolicitudCertificacionPersona.jrxml",
+                "C09AcuerdoCumplimiento.jrxml"
         };
 
         JPanel checkboxContainer = new JPanel();
