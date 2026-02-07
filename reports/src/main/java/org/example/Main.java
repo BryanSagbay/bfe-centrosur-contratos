@@ -28,7 +28,6 @@ public class Main {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception e) {
             System.err.println("No se pudo configurar el Look and Feel del sistema: " + e.getMessage());
-            // Continuar con el Look and Feel por defecto
         }
     }
 }
